@@ -5,7 +5,13 @@
   },
   "detail": {
     "contributors": [],
-    "diagrams": [],
+    "diagrams": [
+      {
+        "title": "Interfaz Usuario",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
     "reviewer": "jose r"
   }
 }
