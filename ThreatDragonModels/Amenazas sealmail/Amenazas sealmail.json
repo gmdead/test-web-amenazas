@@ -9,7 +9,240 @@
       {
         "title": "Interfaz Usuario",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 38,
+                "y": 45
+              },
+              "angle": 0,
+              "id": "ff985fdf-0194-4967-8772-c770dd33bdda",
+              "z": 1,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Browser"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 305,
+                "y": 171
+              },
+              "angle": 0,
+              "id": "5c399ad2-d588-47e5-a127-7c890d20a8d6",
+              "z": 2,
+              "hasOpenThreats": false,
+              "privilegeLevel": "",
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Web Publica"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "ff985fdf-0194-4967-8772-c770dd33bdda"
+              },
+              "target": {
+                "x": 353,
+                "y": 165
+              },
+              "vertices": [
+                {
+                  "x": 250,
+                  "y": 86
+                },
+                {
+                  "x": 278,
+                  "y": 98
+                }
+              ],
+              "id": "1dce7162-0ca0-4d8d-ac38-10b33a6ec858",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Solicitud Web",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 3,
+              "hasOpenThreats": false,
+              "protocol": "HTTPS",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "5c399ad2-d588-47e5-a127-7c890d20a8d6"
+              },
+              "target": {
+                "x": 114,
+                "y": 133
+              },
+              "vertices": [
+                {
+                  "x": 230,
+                  "y": 172
+                },
+                {
+                  "x": 171,
+                  "y": 172
+                }
+              ],
+              "id": "84623d1a-ea13-4efc-91fb-af507cbc5ff4",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Respuesta Web",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 4,
+              "hasOpenThreats": false,
+              "protocol": "HTTPS",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 170,
+                "y": 262
+              },
+              "target": {
+                "x": 362,
+                "y": 67
+              },
+              "vertices": [
+                {
+                  "x": 240,
+                  "y": 205
+                },
+                {
+                  "x": 286,
+                  "y": 130
+                }
+              ],
+              "id": "1606b3c0-9b9f-485e-b992-eaaf0bec8700",
+              "z": 5,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 496,
+                "y": 436
+              },
+              "angle": 0,
+              "id": "fb94f698-c437-4de3-a556-d4c664feb97d",
+              "z": 6,
+              "hasOpenThreats": false,
+              "storesCredentials": true,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Base de datos"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 520,
+                "y": 215
+              },
+              "angle": 0,
+              "id": "e535fede-07fd-492b-902d-2017bca0432b",
+              "z": 7,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Aplicacion"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 1238
+        }
       }
     ],
     "reviewer": "jose r"
