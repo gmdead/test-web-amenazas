@@ -191,8 +191,8 @@
                 "height": 80
               },
               "position": {
-                "x": 496,
-                "y": 436
+                "x": 585,
+                "y": 446
               },
               "angle": 0,
               "id": "fb94f698-c437-4de3-a556-d4c664feb97d",
@@ -218,8 +218,8 @@
                 "height": 100
               },
               "position": {
-                "x": 520,
-                "y": 215
+                "x": 600,
+                "y": 212
               },
               "angle": 0,
               "id": "e535fede-07fd-492b-902d-2017bca0432b",
@@ -234,6 +234,89 @@
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "5c399ad2-d588-47e5-a127-7c890d20a8d6"
+              },
+              "target": {
+                "x": 617,
+                "y": 221
+              },
+              "vertices": [
+                {
+                  "x": 490,
+                  "y": 200
+                }
+              ],
+              "id": "6efcdfc6-81e9-45bd-9c3a-af56f5294031",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Solicitud App",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 8,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "e535fede-07fd-492b-902d-2017bca0432b"
+              },
+              "target": {
+                "x": 392,
+                "y": 256
+              },
+              "vertices": [
+                {
+                  "x": 470,
+                  "y": 277
+                }
+              ],
+              "id": "e01e1d34-9271-45e3-9862-bf1d3ffc4264",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.5147809931219651,
+                    "offset": -1.3413013449567897
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Respuesta App",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 9,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
                 }
               }
             }
